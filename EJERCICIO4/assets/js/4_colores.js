@@ -3,9 +3,9 @@
 const father = document.getElementById("container");
 const keyBox = document.getElementById("key");
 
-//Sólo los class=box son clickeables//
+
 father.addEventListener("click", (e) => {
-    if (e.target && e.target.className == "box") {
+    if (e.target.className == "box") {
         if (e.target.style.background == "black") {
             e.target.style.background = e.target.style.color;
         } else {
@@ -14,7 +14,7 @@ father.addEventListener("click", (e) => {
     }
 });
 
-//Selección de color//
+
 let color;
 
 const getColor = (key) => {
